@@ -1,0 +1,29 @@
+body {
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	background-color: #eee;
+	color: var(--smain);
+	padding: 0;
+	margin: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+	margin: 0 0 10px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+/* Links */
+a {
+	color: var(--smain);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

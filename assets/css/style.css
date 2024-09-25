@@ -1,0 +1,171 @@
+/* Global styles */
+:root {
+	--fmain: #701818;
+	--smain: #313131;
+	--secondary: #f6e7d8;
+	--third: #fef9a7;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+a {
+	color: var(--smain);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Header styles */
+#main-header {
+	background: var(--fmain);
+	color: var(--secondary);
+	padding: 1rem 0;
+	text-align: center;
+}
+
+#main-header h1 {
+	margin-bottom: 0.5rem;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#main-header nav ul {
+	list-style: none;
+}
+
+#main-header nav ul li {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+#main-header nav ul li a {
+	color: var(--secondary);
+}
+
+/* Blog intro section */
+#blog-intro {
+	padding: 2rem;
+	background-color: var(--third);
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* Blog posts section */
+#blog-posts {
+	display: flex;
+	justify-content: space-around;
+	margin: 2rem;
+	flex-wrap: wrap;
+}
+
+.post-card {
+	background: var(--secondary);
+	padding: 0 0 1rem;
+	overflow: hidden;
+	width: 22%;
+	margin-block: 20px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all5 0.5s;
+	-o-transition: all 0.5s;
+	cursor: pointer;
+}
+
+.post-card:hover {
+	box-shadow: 1px 1px 0px 1px rgba(26, 26, 26, 0.378);
+}
+
+@media (max-width: 978px) {
+	.post-card {
+		width: 30%;
+	}
+}
+
+@media (max-width: 688px) {
+	.post-card {
+		width: 45%;
+	}
+}
+
+@media (max-width: 450px) {
+	.post-card {
+		width: 100%;
+	}
+}
+
+.post-card img {
+	width: 100%;
+	height: auto;
+}
+
+.post-card h3 {
+	margin: 0.5rem 0.5rem 0;
+	color: var(--fmain);
+	font-weight: 700;
+
+}
+
+.post-card p {
+	margin: 0 0.5rem 0;
+	color: var(--smain);
+}
+
+.post-card button {
+	margin: 1rem 0.5rem 0;
+	text-decoration: none;
+	color: var(--secondary);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	background-color: var(--fmain);
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	padding: 7px 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.post-card button:hover {
+	background-color: var(--smain);
+}
+
+/* Footer styles */
+#main-footer {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+#main-footer div a {
+	color: #fff;
+	margin-right: 1rem;
+}
+
+#main-footer div a:hover {
+	text-decoration: underline;
+}
